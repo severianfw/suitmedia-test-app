@@ -1,0 +1,2 @@
+rootProject.name = "Suitmedia Test App"
+include ':app'
