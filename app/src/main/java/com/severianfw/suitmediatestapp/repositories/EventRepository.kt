@@ -20,6 +20,18 @@ object EventRepository {
         R.drawable.hackathon
     )
 
+    private val eventLat = doubleArrayOf(-7.7837274,
+        -7.7833447,
+        -7.7831746,
+        -7.7831321
+    )
+
+    private val eventLong = doubleArrayOf(110.4015465,
+        110.4142924,
+        110.4057093,
+        110.3960963
+    )
+
     val listData: ArrayList<Event>
         get() {
             val list = arrayListOf<Event>()
@@ -28,6 +40,8 @@ object EventRepository {
                 event.name = eventNames[position]
                 event.date = eventDate[position]
                 event.img = eventImg[position]
+                event.lat = eventLat[position]
+                event.long = eventLong[position]
                 list.add(event)
             }
             return list

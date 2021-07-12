@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         clearData()
     }
 
-    fun changeBtnEventText() {
+    private fun changeBtnEventText() {
         val btnEvent: Button = findViewById(R.id.btn_event)
         eventData = getSharedPreferences("EVENT", MODE_PRIVATE)
         val eventName: String? = eventData.getString("NAME", "")
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun changeBtnGuestText() {
+    private fun changeBtnGuestText() {
         val btnGuest: Button = findViewById(R.id.btn_guest)
         guestData = getSharedPreferences("GUEST", MODE_PRIVATE)
         val guestName: String? = guestData.getString("NAME", "")
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun clearData(){
+    private fun clearData(){
         eventData = getSharedPreferences("EVENT", MODE_PRIVATE)
         var eventEditor: SharedPreferences.Editor = eventData.edit()
         eventEditor.clear()

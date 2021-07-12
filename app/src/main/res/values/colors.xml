@@ -7,10 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="grey">#656565</color>
+    <color name="light_grey">#d3d3d3</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="broken_white">#F2F2F2</color>
     <color name="blue">#067EED</color>
     <color name="light_blue">#C1E6FF</color>
     <color name="dark_blue">#0E3854</color>
+    <color name="blue_tags">#8fb1d5</color>
     <color name="orange">#FF7C1F</color>
+    <color name="gold">#caa935</color>
+    <color name="dark_gold">#A18629</color>
 
 </resources>

@@ -18,7 +18,7 @@ class ListEventAdapter(private val listEvent: ArrayList<Event>) : RecyclerView.A
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.tv_event_name)
         var tvDate: TextView = itemView.findViewById(R.id.tv_event_date)
-        var imgPhoto: ImageView = itemView.findViewById(R.id.iv_event)
+        var imgEvent: ImageView = itemView.findViewById(R.id.iv_event)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -34,7 +34,7 @@ class ListEventAdapter(private val listEvent: ArrayList<Event>) : RecyclerView.A
         Glide.with(holder.itemView.context)
             .load(event.img)
             .apply(RequestOptions().override(75, 75))
-            .into(holder.imgPhoto)
+            .into(holder.imgEvent)
 
         holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listEvent[holder.absoluteAdapterPosition])}
     }

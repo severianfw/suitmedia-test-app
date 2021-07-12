@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--    &lt;!&ndash;When Button is in pressed state &ndash;&gt;-->
-    <!--    <item android:state_pressed="true" android:color="?attr/colorPrimaryVariant" />-->
-    <!--    &lt;!&ndash;Default Background Color &ndash;&gt;-->
-    <!--    <item android:color="?attr/colorPrimary" />-->
-    <!--    <item android:state_enabled="true">-->
-    <!--        <shape android:shape="rectangle">-->
-    <!--            <solid android:color="?attr/colorPrimary"/>-->
-    <!--            <corners android:radius="8dp"/>-->
-    <!--        </shape>-->
-    <!--    </item>-->
-    <!--    <item android:state_pressed="true">-->
-    <!--        <shape android:shape="rectangle">-->
-    <!--            <solid android:color="?attr/colorSecondary"/>-->
-    <!--            <corners android:radius="8dp"/>-->
-    <!--        </shape>-->
-    <!--    </item>-->
-    <solid android:color="?attr/colorPrimary" />
-    <corners android:radius="8dp" />
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--        &lt;!&ndash;When Button is in pressed state &ndash;&gt;-->
+<!--        <item android:state_pressed="true" android:color="?attr/colorPrimaryVariant" />-->
+<!--        &lt;!&ndash;Default Background Color &ndash;&gt;-->
+<!--        <item android:color="?attr/colorPrimary" />-->
+        <item android:state_enabled="true">
+            <shape android:shape="rectangle">
+                <corners android:radius="6dp"/>
+                <stroke android:color="@color/white" android:width="2dp"/>
+            </shape>
+        </item>
+        <item android:state_pressed="true">
+            <shape android:shape="rectangle">
+                <solid android:color="?attr/colorPrimaryVariant"/>
+                <corners android:radius="8dp"/>
+            </shape>
+        </item>
+<!--    <solid android:color="?attr/colorPrimary" />-->
+<!--    <corners android:radius="8dp" />-->
+</selector>

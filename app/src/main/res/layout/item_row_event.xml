@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="10dp"
     android:background="@drawable/rv_item_shape"
-    android:gravity="center_vertical"
-    android:padding="16dp">
+    android:layout_marginTop="10dp">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_event"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:shapeAppearanceOverlay="@style/roundedImageView"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <RelativeLayout
+        android:id="@+id/header_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp">
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tv_event_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
+            android:layout_alignParentStart="true"
             android:fontFamily="@font/nunito_bold"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -38,9 +43,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_event_name"
-            android:textColor="@color/grey"
-            android:textSize="14sp"
+            android:textColor="@color/gold"
+            android:textSize="12sp"
             tools:text="18 August 2021" />
+
+        <TextView
+            android:id="@+id/tv_tags_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_event_date"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_tags"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="@string/nutricia" />
+
+        <TextView
+            android:id="@+id/tv_tags_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_event_date"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/tv_tags_1"
+            android:background="@drawable/bg_tags"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="@string/highlight_f3" />
     </RelativeLayout>
 
-</LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:text="@string/lorem"
+        app:layout_constraintTop_toBottomOf="@id/header_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_event"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
