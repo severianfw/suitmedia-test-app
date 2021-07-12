@@ -1,4 +1,4 @@
-package com.severianfw.suitmediatestapp.activities
+package com.severianfw.suitmediatestapp.views
 
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,6 @@ import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.severianfw.suitmediatestapp.EventMapsFragment
-import com.severianfw.suitmediatestapp.MapsFragment
 import com.severianfw.suitmediatestapp.R
 import com.severianfw.suitmediatestapp.adapters.ListEventAdapter
 import com.severianfw.suitmediatestapp.models.Event

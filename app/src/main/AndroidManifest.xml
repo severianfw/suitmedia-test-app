@@ -31,10 +31,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".activities.EventActivity" />
-        <activity android:name=".activities.GuestActivity" />
-        <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.HomeActivity">
+        <activity android:name=".views.EventActivity" />
+        <activity android:name=".views.GuestActivity" />
+        <activity android:name=".views.MainActivity" />
+        <activity android:name=".views.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

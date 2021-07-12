@@ -1,9 +1,8 @@
-package com.severianfw.suitmediatestapp.activities
+package com.severianfw.suitmediatestapp.views
 
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,7 +13,6 @@ import com.severianfw.suitmediatestapp.repositories.GuestRepository
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.time.Month
 
 class GuestActivity : AppCompatActivity() {
     private lateinit var rvGuest: RecyclerView

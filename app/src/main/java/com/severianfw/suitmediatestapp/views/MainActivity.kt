@@ -1,10 +1,9 @@
-package com.severianfw.suitmediatestapp.activities
+package com.severianfw.suitmediatestapp.views
 
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import com.severianfw.suitmediatestapp.R
